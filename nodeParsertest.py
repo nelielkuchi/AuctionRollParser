@@ -25,24 +25,17 @@ for body in root:
         ###searching through div for the "Date"-Tag and storing the value in date
         date = div.find('.//date')
         #iteration over cells in body
-for table in root:
-    for row in table:
-        print(row.find('.//cell').text)
-        for table in body:
-            #print(table)
+        for cells in body:
             ###searching through div for 'cell'-Tag and storing it in text (debugging reasons)
-            for row in table:
-                #print(row)
-                for cell in row:
-                    text = cell.findall('.//row/cell')
+            text = div.findall('.//row/cell')
             ###text returns the cell structure of the Document
             ###USUALLY TAGS ARE LISTE OBJECTS IN ELEMENTTREE!
             #print(text)
             ###Taking the information of the cells to insert them into the DataFrame
             ###USing the Taglist that is returned by the findall function
-            product = None
-            buyer = None
-            price = None
+            product = text[3]
+            buyer = text[4]
+            price = text[5]
 ####PARSES DATA INTO DATAFRAME####
 ###setting up the dataframe, inserting the values of the cells and date
         df_xml = df_xml.append(
@@ -55,10 +48,10 @@ for table in root:
 
     #print(ET.tostring(div))
     #print('--------------------')
-#print(df_xml)
+print(df_xml)
 
 #debugging printing to see if text gives the arguments I need
-#print(getvalueofnode(date))
-#print(getvalueofnode(product))
-#print(getvalueofnode(buyer))
-#print(getvalueofnode(price))
+print(getvalueofnode(date))
+print(getvalueofnode(product))
+print(getvalueofnode(buyer))
+print(getvalueofnode(price))
