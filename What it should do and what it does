@@ -1,29 +1,12 @@
-Program should return this:
+The Program returns now a list like it should do:
+date
+product
+buyer
+price
+date
+product
+buyer
+price
 
-Date | Product | Buyer | Price
-date1 product1  buyer1   price1
-date1 product2  buyer2   price2
-date1 product3  buyer3   price 3
-date2 product2.1 buyer2.1 price 2.1
-....
-
-first cell tag in xml is the product, second cell tag is the buyer, third cell tag is the price
-Date has to be copied as long as table in xml for all cells to be in front of the cell
-
-What the program returns right now:
-                     Date  ...   Price
-0            van 1768 tot 1773  ...  f:o 63
-1                  5 Maij 1770  ...     �:7
-2  11, 12, 13 en 14 April 1768  ...     2:2
-3  11, 12, 13 en 14 April 1768  ...     5:1
-4                12 Maart 1770  ...     4:7
-5                  5 Maij 1770  ...   100:1
-6                19 Maart 1770  ...    10:�
-7                 25 Maij 1768  ...    10:�
-
-[8 rows x 4 columns]
-25 Maij 1768
-1 varken
-mons:r Herc:s Sandenberg
-10:�
-[Finished in 0.909s]
+TO DO:
+Fill this for-looped data into a dataframe table or a csv file
