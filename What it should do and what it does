@@ -1,0 +1,22 @@
+Program should return this:
+
+Date | Product | Buyer | Price
+date1 product1  buyer1   price1
+date1 product2  buyer2   price2
+date1 product3  buyer3   price 3
+date2 product2.1 buyer2.1 price 2.1
+....
+
+Date has to be copied as long as table in xml for all cells to be in front of the cell
+
+What the program returns right now:
+ Date Product Buyer Price
+0            van 1768 tot 1773    None  None  None
+1                  5 Maij 1770    None  None  None
+2  11, 12, 13 en 14 April 1768    None  None  None
+3  11, 12, 13 en 14 April 1768    None  None  None
+4                12 Maart 1770    None  None  None
+5                  5 Maij 1770    None  None  None
+6                19 Maart 1770    None  None  None
+7                 25 Maij 1768    None  None  None
+[Finished in 1.386s]
