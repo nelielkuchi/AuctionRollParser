@@ -41,6 +41,7 @@ for body in root:
             f = open('Result.txt', 'a', encoding = 'utf-8')
             f.write(str(lines))
             f.write('\n')
+            f.close()
             print('Pasta')
 
         raw_data = 'Result.txt'
