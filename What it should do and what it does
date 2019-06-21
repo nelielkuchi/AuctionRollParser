@@ -1,16 +1,14 @@
 The Program saves the list of dates, products etc in a txt file:
 
-['11, 12, 13 en 14 April 1768', ';', '1 lessenaar', ';', 'Godfried Haubtfleisch', ';', '2:5']
-['11, 12, 13 en 14 April 1768', ';', '1 snaphaan', ';', 'Jan Smook', ';', '11:–']
-['11, 12, 13 en 14 April 1768', ';', '1 p:r pistoolen', ';', 'Hendrik de Waal', ';', '4:–']
-['11, 12, 13 en 14 April 1768', ';', '1 slave jonge gen:t ', ';', 'Elisabeth de Waal', ';', '110:–']
-['11, 12, 13 en 14 April 1768', ';', None, ';', 'Somma', ';', 'Rd:s 170:5']
-['12 Maart 1770', ';', None, ';', None, ';', 'Rd:s']
-['12 Maart 1770', ';', '10 schaapen', ';', 'Jan Swigting', ';', '4:7']
-['12 Maart 1770', ';', '10 schaapen', ';', 'Jacob Taillard', ';', '5:–']
-['12 Maart 1770', ';', '10 schaapen', ';', 'Jacob Taillard', ';', '5:2']
-['12 Maart 1770', ';', '10 schaapen', ';', 'And:s Brink', ';', '4:4']
-['12 Maart 1770', ';', '10 schaapen', ';', 'Mart:s Ackerman', ';', '4:3']
+5 Maij 1770;1 p:r goude knoopjes en 1 silvere cintuurgesp;Christoff:l Kreij;1:7
+5 Maij 1770;1 ledige kist en 1 stoel;Dirk Snith;2:–
+5 Maij 1770;1 ledige kist;de wed:e And:s Grové;1:1
+5 Maij 1770;9 vrouw gonnen;de wed:e And:s Grové;14:–
+5 Maij 1770;4 sacken;de wed:e And:s Grové;4:–
+5 Maij 1770;28 hemden;Anna Maria Heijns;33:3
+5 Maij 1770;7 cabaijen;Anna Maria Heijns;6:–
+5 Maij 1770;21 rokken;Anna Maria Heijns;15:–
+5 Maij 1770;3 halve sacken;Anna Maria Heijns;1:7
 
 
 TO DO:
