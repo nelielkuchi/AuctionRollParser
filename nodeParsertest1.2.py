@@ -42,9 +42,7 @@ for body in root:
             f.write('\n')
             f.close()
             print(done)
-            if row == rows:
-                break
-
+           
 
 f = open('ResultTEST.txt', 'r', encoding='mbcs')
 word = ['(.*paard.*)|(.*veul.*)|(.*merrij.*)|(.*hengste.*)']
