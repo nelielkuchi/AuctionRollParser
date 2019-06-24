@@ -1,5 +1,6 @@
 import pandas as pd
 import xml.etree.ElementTree as ET
+import re
 
 ####DEFINE NODE####
 def getvalueofnode(node):
@@ -36,29 +37,25 @@ for body in root:
             #print(getvalueofnode(buyer))
             #print(getvalueofnode(price))
             lines = (date2 + ';' + str(product) + ';' + str(buyer) + ';' + str(price))
-            f = open('Result.txt', 'a', encoding = 'utf-8')
+            f = open('ResultTEST.txt', 'a', encoding = 'utf-8')
             f.write(str(lines))
             f.write('\n')
             f.close()
-            #print('hi')
+            print(done)
+            if row == rows:
+                break
 
 
-####PARSES DATA INTO DATAFRAME####
-###setting up the dataframe, inserting the values of the cells and date
-#    df_xml = df_xml.append(
-#            pd.Series([getvalueofnode(date2), getvalueofnode(product),
-#            getvalueofnode(buyer), getvalueofnode(price)], index=dfcols),
-#            ignore_index=True)
-
-####PRINTS DATAFRAME###
-#printing out the dataframe
-
-    #print(ET.tostring(div))
-    #print('--------------------')
-#print(df_xml)
-
-#debugging printing to see if text gives the arguments I need
-#print(getvalueofnode(date))
-#print(getvalueofnode(product))
-#print(getvalueofnode(buyer))
-#print(getvalueofnode(price))
+f = open('ResultTEST.txt', 'r', encoding='mbcs')
+word = ['(.*paard.*)|(.*veul.*)|(.*merrij.*)|(.*hengste.*)']
+for line in f:
+    for i in word:
+        if re.search(i, line):
+            print(line)
+            horses = line
+            horsesFile = open('horses.csv', 'a', encoding='utf-8')
+            horsesFile.write(horses)
+            horsesFile.close()
+            horsesFileTxt = open('horses.txt', 'a', encoding='utf-8')
+            horsesFileTxt.write(horses)
+            horsesFileTxt.close()
